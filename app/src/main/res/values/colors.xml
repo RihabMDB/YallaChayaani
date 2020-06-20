@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A1232323</color>
+    <color name="colorPrimaryDark">#BAA33B1B</color>
+    <color name="colorAccent">#8B5A1702</color>
+    <color name="haut">#F782AA</color>
+    <color name="artext">#F8C2D4</color>
+    <color name="textcolor">#ffffff</color>
+    <color name="marron">#BAA64F34</color>
+    <color name="background">#FFC107</color>
+    <color name="erreur" >#970505</color>
+
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Authentifier"
+    android:background="@drawable/way"
+>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+       >
+
+        <TextView
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="100dp"
+            android:fontFamily="cursive"
+            android:padding="8dp"
+            android:text="Yalla Chayaani"
+            android:textColor="#ffffff"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/editText1"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="4dp"
+           android:backgroundTint="@color/textcolor"
+            android:ems="15"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor"
+            android:textSize="20sp"
+            android:drawableRight="@drawable/ic_account_circle" />
+
+        <EditText
+
+            android:id="@+id/editText2"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="4dp"
+            android:ems="15"
+            android:hint="Mots de passe"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor"
+            android:backgroundTint="@color/textcolor"
+            android:textSize="20sp"
+            android:drawableRight="@drawable/ic_baseline_vpn_key_24"
+           />
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/shape_style"
+            android:ems="7"
+            android:text="Connecter"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/shape_style"
+            android:ems="7"
+            android:text="Quiter"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Nouvelle Utlisateur ? "
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Inscrire Maintenant "
+                android:textColor="#FFFEF6"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+</FrameLayout>

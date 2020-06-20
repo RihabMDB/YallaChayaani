@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@drawable/way"
+    tools:context=".Inscrit">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+android:layout_gravity="center_horizontal"
+            android:id="@+id/img"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:minWidth="10dp"
+            android:minHeight="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_account_circle" />
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/textcolor"
+            android:drawableRight="@drawable/ic_email"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor" />
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Nom"
+            android:inputType="text"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor"
+            android:backgroundTint="@color/textcolor"
+            android:drawableRight="@drawable/ic_account_circle"/>
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Prénom"
+            android:inputType="text"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor"
+            android:backgroundTint="@color/textcolor"
+            android:drawableRight="@drawable/ic_account_circle"/>
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="left"
+    android:layout_marginLeft="45dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Homme"
+        android:textColor="@color/textcolor"
+        android:buttonTint="@color/textcolor"
+        android:textStyle="bold" android:id="@+id/homme"
+       />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Femme"
+        android:textColor="@color/textcolor"
+        android:buttonTint="@color/textcolor"
+        android:textStyle="bold"
+        android:id="@+id/femme"
+        android:layout_marginLeft="25dp"/>
+   </RadioGroup>
+        <EditText
+            android:id="@+id/numtel"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Numéro du téléphone"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor"
+            android:backgroundTint="@color/textcolor"
+            android:drawableRight="@drawable/ic_phone"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="mots de passe"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor"
+            android:backgroundTint="@color/textcolor"
+            android:drawableRight="@drawable/ic_baseline_vpn_key_24"/>
+
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/textcolor"
+            android:drawableRight="@drawable/ic_baseline_vpn_key_24"
+            android:ems="10"
+            android:hint="Confirmer mots de passe"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="Inscrire"
+            android:background="@drawable/shape_style"
+            android:textColor="@color/textcolor"
+           />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="annuler"
+            android:background="@drawable/shape_style"
+            android:textColor="@color/textcolor"
+            android:layout_marginLeft="15dp"/></LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

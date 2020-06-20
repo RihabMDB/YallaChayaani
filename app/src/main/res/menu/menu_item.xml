@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"/>
+
+    <item
+        android:id="@+id/chercher"
+        android:title="Chercher un Trajet"/>
+
+    <item
+        android:id="@+id/ajouter"
+        android:title="Ajouter un Trajet"/>
+    <item
+        android:id="@+id/mesres"
+        android:title="Mes Reservations"/>
+    <item
+        android:id="@+id/mesoff"
+        android:title="Mes Trajets"/>
+    <item
+        android:id="@+id/deconnecter"
+        android:title="Déconnecter"/>
+    <item
+        android:id="@+id/about"
+        android:title="يلا شيعني"/>
+
+</menu>

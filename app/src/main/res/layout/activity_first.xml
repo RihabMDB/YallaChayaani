@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity"
+    android:background="@drawable/way"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_car"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="يلا شيعني"
+        android:textColor="@color/textcolor"
+        android:textSize="30dp"
+        android:fontFamily="cursive"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Est une application"
+        android:textColor="@color/textcolor"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="du Covoiturage"
+        android:textColor="@color/textcolor"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu peut :"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:fontFamily="cursive"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="publier, chercher ou"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:fontFamily="cursive"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="réserver des Trajets  "
+        android:textColor="@color/textcolor"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:fontFamily="cursive"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ajouter"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/marron"
+        app:title="Ajouter un Offre"
+        app:titleTextColor="#F7F5F1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/e1"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:hint="Depart" />
+
+        <EditText
+            android:id="@+id/e2"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:hint="Destination" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/e3"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:hint="choose the Date"
+        android:layout_marginLeft="10dp"/>
+   <EditText
+    android:id="@+id/e4"
+    android:layout_width="357dp"
+    android:layout_height="wrap_content"
+       android:timePickerMode="spinner"
+       android:hint="choose the time"
+       android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/e5"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:hint="voulez vous donner le tarif"
+        android:layout_marginLeft="10dp"/>
+
+
+    <EditText
+        android:id="@+id/e6"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:hint="donner le nombre de place disponible"
+       android:layout_marginLeft="10dp"/>
+
+
+    <EditText
+        android:id="@+id/e7"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:hint="donner la marque de voiture"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/e8"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:hint="donner le matricule de voiture"
+        android:layout_marginLeft="10dp" />
+    <EditText
+        android:id="@+id/e9"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:hint="donner Votre vitesse "
+        android:layout_marginLeft="10dp"/>
+    <EditText
+        android:id="@+id/e10"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:hint="donner le nbre d'excale"
+        android:layout_marginLeft="10dp"/>
+    <EditText
+        android:id="@+id/e11"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:hint="la quantité de bagage "
+        android:layout_marginLeft="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voiture Climatisée ?"
+            android:layout_marginLeft="20dp"/>
+        <CheckBox
+            android:id="@+id/fum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chouffeur fumeur ?"
+            android:layout_marginLeft="20dp"/>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginTop="10dp">
+       <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aj"
+        android:text="Ajouter"
+           android:background="@drawable/shape_style"
+           android:textColor="@color/textcolor"
+           android:backgroundTint="@color/background"
+           />
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/an"
+        android:text="Annuler"
+        android:background="@drawable/shape_style"
+        android:backgroundTint="@color/background"
+        android:textColor="@color/textcolor"/></LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/marron"
+        app:title="Details"
+        app:titleTextColor="#F7F5F1" />
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="136dp"
+        android:layout_height="142dp"
+        android:layout_gravity="center"
+        android:onClick="showprofile" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Réserver"
+        android:background="@drawable/shape_style"
+        android:backgroundTint="@color/background"
+        android:textColor="@color/textcolor"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+</LinearLayout>
