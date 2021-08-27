@@ -18,17 +18,20 @@
         <TextView
             android:layout_width="110dp"
             android:layout_height="wrap_content"
-            android:text="Debart :"
+            android:text="Debart "
             android:textSize="17dp"
             android:textStyle="bold"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorPrimaryDark"/>
         <EditText
             android:id="@+id/dep"
-            android:layout_width="210dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="entrer votre depart"
-            android:layout_marginLeft="30dp"/>
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:outlineAmbientShadowColor="@color/colorPrimaryDark"/>
 
         <TextView
             android:layout_width="108dp"
@@ -37,13 +40,15 @@
             android:textSize="17dp"
             android:textStyle="bold"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"/>
         <EditText
             android:id="@+id/des"
-            android:layout_width="214dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="entrer votre destination"
-            android:layout_marginLeft="30dp"/>
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
 
 <TextView
     android:layout_width="wrap_content"
@@ -52,29 +57,35 @@
     android:textSize="17dp"
     android:textStyle="bold"
     android:layout_marginLeft="30dp"
-    android:layout_marginTop="10dp"/>
+    android:layout_marginTop="10dp"
+    android:textColor="@color/colorPrimaryDark"/>
 <DatePicker
         android:id="@+id/date"
-        android:layout_width="277dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
     android:datePickerMode="spinner"
     android:calendarViewShown="false"
-    android:layout_marginLeft="25dp"/>
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"/>
 
     <Button
         android:id="@+id/cherch"
-        android:layout_width="277dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Chercher"
         android:background="@drawable/shape_style"
         android:backgroundTint="@color/background"
         android:layout_gravity="center"
-        android:textColor="@color/textcolor"/>
+        android:textColor="@color/textcolor"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
      />
 
 

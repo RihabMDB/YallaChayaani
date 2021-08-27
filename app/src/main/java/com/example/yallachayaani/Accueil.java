@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -14,9 +15,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import com.google.android.material.navigation.NavigationView;
@@ -43,14 +44,23 @@ public class Accueil extends AppCompatActivity  implements NavigationView.OnNavi
        final ArrayList<Offre> of = db.getListOff();
         ArrayAdapter<Offre> adapter = new offreArrayAdapter(this, android.R.layout.simple_list_item_1, of);
         l.setAdapter(adapter);
+
         // Get user id
-        SharedPreferences prefs = getSharedPreferences("X", MODE_PRIVATE);
+         prefs = getSharedPreferences("X", MODE_PRIVATE);
          //  id=getIntent().getIntExtra("userId",0);
             id=prefs.getInt("user_id",0);
 
             drawerLayout = findViewById(R.id.drawer);
             toolbar = findViewById(R.id.toolbar);
+         // Set header layout of nav bar Infos
             navigationView = findViewById(R.id.navigationView);
+            View header=navigationView.getHeaderView(0);
+            TextView name = (TextView) header.findViewById(R.id.name);
+            ImageView i = (ImageView) header.findViewById(R.id.profilePic);
+            name.setText(db.getUserName(id));
+            Bitmap bitmap=db.getImage(id);
+            i.setImageBitmap(bitmap);
+
             setSupportActionBar(toolbar);
             getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -77,12 +87,13 @@ public class Accueil extends AppCompatActivity  implements NavigationView.OnNavi
         public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
             switch (menuItem.getItemId()){
                 case R.id.deconnecter:
-                 {saveUser(0);
+                 {   saveUser(0);
                       //prefs = getSharedPreferences("X", MODE_PRIVATE);
-                    Intent i= new Intent(Accueil.this,Authentifier.class);
+                     Intent i= new Intent(Accueil.this,Authentifier.class);
                      startActivity(i);
-                    // Toast.makeText(this, "user "+ prefs.getInt("user_id",-1), Toast.LENGTH_SHORT).show();
-                     }
+                     finish();
+                     prefs.edit().clear().commit();
+                 }
                     break;
                 case R.id.chercher:
                 { Intent i= new Intent(Accueil.this,Chercher.class);
@@ -102,16 +113,20 @@ public class Accueil extends AppCompatActivity  implements NavigationView.OnNavi
                 case R.id.mesoff:
                 {Intent i= new Intent(Accueil.this,MesOffres.class);
                     i.putExtra("userId",id);
-                startActivity(i);}
+                    startActivity(i);}
                     break;
                 case R.id.profile:
-                {Intent i= new Intent(Accueil.this,Profile.class);
-                   i.putExtra("userId",id);
+                {   Intent i= new Intent(Accueil.this,Profile.class);
+                    i.putExtra("userId",id);
                     i.putExtra("pic",imgbyte);
-                    startActivity(i);}
-                case R.id.about:
-                {Intent i= new Intent(Accueil.this,FirstActivity.class);
-                    startActivity(i);}
+                    startActivity(i);
+                }
+                break;
+                case R.id.aboutt:
+                {
+                Intent i2= new Intent(Accueil.this, About.class);
+                    startActivity(i2);
+                }
                 break;
                 default:
                     break;

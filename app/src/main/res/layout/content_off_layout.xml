@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10px">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10px"
+    android:layout_marginTop="8dp">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#8AFBF3F0">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/image2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="100dp">
         <ImageView
             android:id="@+id/image"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginRight="10dp"
             android:contentDescription="Property Image" />
+        </androidx.cardview.widget.CardView>
+
         <RelativeLayout
             android:id="@+id/movieDetails"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/image">
+            android:layout_toRightOf="@+id/image2">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

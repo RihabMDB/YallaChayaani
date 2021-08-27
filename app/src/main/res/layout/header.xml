@@ -5,42 +5,45 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical"
         android:background="@color/marron"
-        android:paddingLeft="15dp"
+
         android:layout_gravity="left"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="200dp"
     android:id="@+id/header">
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_vertical"
-            android:layout_height="match_parent"
-            android:layout_marginTop="15dp">
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="80dp">
+        <ImageView
 
-            <ImageView
-                android:id="@+id/profilePic"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-              android:src="@drawable/ic_account_circle"
-                />
+            android:id="@+id/profilePic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/ic_account_circle" />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:text="name"
+            android:textColor="#FFFCFC"
+            android:textSize="14dp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="يلا شيعني "
-                android:textSize="14dp"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:textColor="#FFFCFC"
-                android:textStyle="bold"
-                android:id="@+id/name"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/userName"/>
 
-        </LinearLayout>
+    </LinearLayout>
 
 
     </LinearLayout>

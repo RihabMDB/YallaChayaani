@@ -13,24 +13,34 @@
         android:background="@color/marron"
         app:title="Details"
         app:titleTextColor="#F7F5F1" />
-
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
     <ImageView
         android:id="@+id/pic"
-        android:layout_width="136dp"
-        android:layout_height="142dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         android:layout_gravity="center"
-        android:onClick="showprofile" />
+        android:onClick="showprofile"
+        android:src="@drawable/user"
+        />
+    </androidx.cardview.widget.CardView>
 
     <ListView
         android:id="@+id/list"
-        android:layout_width="324dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        />
 
     <Button
         android:id="@+id/res"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:text="Réserver"
         android:background="@drawable/shape_style"

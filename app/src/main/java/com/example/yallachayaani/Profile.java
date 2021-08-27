@@ -22,20 +22,17 @@ import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 
 public class Profile extends AppCompatActivity {
-MyDB db=new MyDB(this);
-ListView l;
-    Drawable d;
+    MyDB db=new MyDB(this);
+    ListView l;
     int id , idcurrent;
     ImageView i;
     Bitmap bitmap;
-    byte[] img=null;
-    Button b;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         i=findViewById(R.id.pic);
-        // Get user id
+        // Get user idFirstActivity
         id =getIntent().getIntExtra("userId",0);
         idcurrent=getIntent().getIntExtra("currentUser",0);
         bitmap=db.getImage(id);

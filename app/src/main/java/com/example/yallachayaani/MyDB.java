@@ -205,6 +205,22 @@ public class MyDB extends SQLiteOpenHelper {
         return arrayList;
     }
 
+    public String getUserName(int i) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String s = null;
+        Cursor res=db.rawQuery("select  name, fullname from "+TABLE_User+" where id_user="+i ,null);
+        res.moveToFirst();
+        while (res.isAfterLast()==false)
+        {
+            String t0 = res.getString(0);
+            String t1 = res.getString(1);
+
+           s= t0+" "+ t1 ;
+            res.moveToNext();
+        }
+        return s;
+    }
+
     public Bitmap getImage(int i) {
         byte[] image ;
         SQLiteDatabase db = this.getReadableDatabase();

@@ -73,7 +73,8 @@ public class Authentifier extends AppCompatActivity {
                   editor.putInt("user_id",id.getInt(0));
                   editor.commit();
                     Intent i = new Intent(Authentifier.this, Accueil.class);
-                    startActivity(i);}
+                    startActivity(i);
+                  finish();}
 
                 else   Toast.makeText(Authentifier.this,"echec de connexion",Toast.LENGTH_SHORT).show();
            }}
